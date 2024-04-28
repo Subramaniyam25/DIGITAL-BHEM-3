@@ -1,0 +1,90 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0px;
+	padding-bottom: 40px;
+}
+
+.whole {
+	background-color: #f9f9f9;
+	padding: 20px;
+	width: 50%;
+	margin: 0 auto;
+	margin-top: 50px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+    animation: shadow-pulse 2s infinite alternate;
+    border-radius: 10px;
+}
+
+.whole h1 {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.details {
+	margin-bottom: 20px;
+}
+
+.details label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.details input[type="text"],
+.details input[type="email"],
+.details input[type="number"],
+.details select,
+.details textarea {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-sizing: border-box;
+}
+
+.details input[type="submit"] {
+background-color: #4CAF50;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.details input[type="reset"] {
+    background-color: #4CAF50;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+.details input[type="submit"]:hover {
+	background-color: #3e8e41;
+}
+
+.details input[type="reset"]:hover {
+	background-color: #3e8e41;
+}
+
+@keyframes shadow-pulse {
+    0% {
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    }
+    50% {
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+    }
+    100% {
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    }
+}
+
+label{
+    font-weight: bolder;
+}
+
+input,textarea{
+    color: red;
+    font-weight: 600;
+}

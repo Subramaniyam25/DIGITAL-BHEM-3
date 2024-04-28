@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hotel Booking Registration</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<div class="whole">
+		<h1 style="color: #3e8e41">Hotel Booking Registration</h1>
+		<form>
+			<div class="details">
+				<label>Name:</label>
+				<input type="text" placeholder="Enter Name" style="font-style: italic;" required>
+			</div>
+			<div class="details">
+				<label>Email:</label>
+				<input type="email" style="font-style: italic;" placeholder="Enter Email" required>
+		    </div>
+            <div class="details" style="display: flex;">
+            <label>Room Type :&nbsp;</label>
+            <input type="checkbox" value="Delux" id="delux">
+            <label for="delux">&nbsp;Delux&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="checkbox" value="suite" id="suite">
+            <label for="suite">&nbsp;Suite</label><br></div>
+            
+            <div class="details" style="display: flex;">
+            <label>Amenities :&nbsp;&nbsp;&nbsp; </label>
+            <input type="checkbox" value="ac" id="ac">
+            <label for="ac">&nbsp;Air Conditioner&nbsp;&nbsp;</label>
+            <input type="checkbox" value="locker" id="locker">
+            <label for="locker">&nbsp;Locker</label><br></div>
+
+			<div class="details">
+				<label>Total Days of Staying:</label>
+				<input type="number" id="td" placeholder="Total Days of Staying" required style="font-style: italic;">
+			</div>
+			<div class="details">
+				<label>Total Number of Persons:</label>
+				<input type="number" id="tp" placeholder="Total Number of Persons" required style="font-style: italic;">
+			</div>
+			<div class="details">
+				<label for="arrival-date">Check in Date:</label>
+				<input type="date" id="arrival-date" name="arrival-date" required>
+			</div>
+			<div class="details">
+				<label>Advance Amount:</label>
+				<input type="number" placeholder="Advance Amount Paid" required id="advamt" style="font-style: italic;">
+			</div>
+			<div class="details">
+				<label>Additional Requests:</label>
+				<textarea placeholder="Optional" rows="4" cols="50" style="font-style: italic;"></textarea>
+			</div>
+			<div class="details">
+				<input type="submit" onclick="hotel()" id="stoprefresh" value="Submit">
+			</div>
+            <div class="details">
+            <h1 style="text-align: center;">Payment Details</h1><br>
+            <label>Total Cost : </label>
+            <h1 id="tc" style="text-align: left;">Rs. 0</h1>
+            <label>Advance Amount : </label>
+            <h1 id="aa" style="text-align: left;">Rs. 0</h1>
+            <label>Remaining Balance : </label>
+            <h1 id="rb" style="text-align: left;">Rs. 0</h1>
+            <input type="reset" onclick="resets()"></input>
+            </div>
+		</form>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
